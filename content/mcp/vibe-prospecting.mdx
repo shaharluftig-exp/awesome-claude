@@ -19,6 +19,24 @@ installable: true
 installCommand: "claude mcp add --transport http vibe-prospecting https://vibeprospecting.explorium.ai/mcp"
 usageSnippet: >-
   Find B2B SaaS companies in New York with 50–200 employees, then enrich the decision-makers and export the list to CSV.
+copySnippet: |-
+  {
+    "mcpServers": {
+      "vibe-prospecting": {
+        "type": "http",
+        "url": "https://vibeprospecting.explorium.ai/mcp"
+      }
+    }
+  }
+configSnippet: |-
+  {
+    "mcpServers": {
+      "vibe-prospecting": {
+        "type": "http",
+        "url": "https://vibeprospecting.explorium.ai/mcp"
+      }
+    }
+  }
 prerequisites:
   - "An MCP client such as Claude Code with OAuth support."
   - "Browser access for OAuth authentication."
